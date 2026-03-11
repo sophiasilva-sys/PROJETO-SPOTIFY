@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Replica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="spotify.css">
+</head>
+<body>
+
+    <header class="top-bar d-flex align-items-center justify-content-between px-3">
+        <div class="logo">
+            <i class="fa-brands fa-spotify fs-2 text-white"></i>
+        </div>
+        
+        <div class="search-container d-flex align-items-center">
+            <div class="home-icon me-2">
+                <i class="fa-solid fa-house text-white"></i>
+            </div>
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass text-secondary"></i>
+                <input type="text" placeholder="O que você quer ouvir?">
+                <i class="fa-solid fa-box-archive border-start ps-2 text-secondary cursor-pointer"></i>
+            </div>
+        </div>
+
+        <div class="top-buttons d-flex align-items-center">
+            <button class="btn-text d-none d-lg-block">Premium</button>
+            <button class="btn-text d-none d-lg-block">Suporte</button>
+            <button class="btn-text d-none d-lg-block border-end pe-3 me-3">Baixar</button>
+            <button class="btn-text fw-bold">Inscrever-se</button>
+            <button class="btn-white">Entrar</button>
+        </div>
+    </header>
+
+    <div class="main-wrapper">
+        <aside class="sidebar">
+            <div class="sidebar-content">
+                <div class="box-container library">
+                    <div class="library-header d-flex justify-content-between align-items-center mb-4">
+                        <button class="nav-link p-0 fw-bold"><i class="fa-solid fa-book"></i> Sua Biblioteca</button>
+                        <i class="fa-solid fa-plus cursor-pointer"></i>
+                    </div>
+                    
+                    <div class="library-card mb-3">
+                        <p class="fw-bold m-0">Crie sua primeira playlist</p>
+                        <p class="small text-secondary">É fácil, vamos te ajudar.</p>
+                        <button class="btn-spotify-white">Criar playlist</button>
+                    </div>
+
+                    <div class="library-card">
+                        <p class="fw-bold m-0">Que tal seguir um podcast novo?</p>
+                        <p class="small text-secondary">Avisaremos você sobre novos episódios.</p>
+                        <button class="btn-spotify-white">Explore podcasts</button>
+                    </div>
+                </div>
+
+                <div class="sidebar-footer px-3 mt-auto pt-4">
+                    <div class="legal-links d-flex flex-wrap gap-2 mb-4">
+                        <a href="#">Legal</a>
+                        <a href="#">Segurança</a>
+                        <a href="#">Privacidade</a>
+                        <a href="#">Cookies</a>
+                        <a href="#">Anúncios</a>
+                        <a href="#">Acessibilidade</a>
+                    </div>
+                    <button class="btn-lang">
+                        <i class="fa-solid fa-globe me-1"></i> Português do Brasil
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section class="content-section">
+                <div class="d-flex justify-content-between align-items-end mb-3">
+                    <h2 class="h4 fw-bold m-0">Músicas em alta</h2>
+                    <span class="text-secondary small fw-bold cursor-pointer hover-underline">Mostrar tudo</span>
+                </div>
+
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3">
+                    <div class="col"><div class="spotify-card"><div class="img-container"><img src="volta.jpg" alt=""><div class="play-hover"><i class="fa-solid fa-play"></i></div></div><p class="card-title">Volta Por Baixo</p><p class="card-desc">Henrique e Juliano</p></div></div>
+                    <div class="col"><div class="spotify-card"><div class="img-container"><img src="bruno.png" alt=""><div class="play-hover"><i class="fa-solid fa-play"></i></div></div><p class="card-title">>Risk It All</p><p class="card-desc">Bruno Mars</p></div></div>
+                    <div class="col"><div class="spotify-card"><div class="img-container"><img src="alcione.jpg" alt=""><div class="play-hover"><i class="fa-solid fa-play"></i></div></div><p class="card-title">Se Não é Amor</p><p class="card-desc">Alcione </p></div></div>
+                    <div class="col"><div class="spotify-card"><div class="img-container"><img src="dvd.jpg" alt=""><div class="play-hover"><i class="fa-solid fa-play"></i></div></div><p class="card-title">DVD</p><p class="card-desc">Yunk vino</p></div></div>
+                    <div class="col"><div class="spotify-card"><div class="img-container"><img src="vida.jpg" alt=""><div class="play-hover"><i class="fa-solid fa-play"></i></div></div><p class="card-title">Vida Vazia</p><p class="card-desc">Desejo de Menina</p></div></div>
+                    <div class="col"><div class="spotify-card"><div class="img-container"><img src="nemp´.jpg".jpg" alt=""><div class="play-hover"><i class="fa-solid fa-play"></i></div></div><p class="card-title">Nem Pagando</p><p class="card-desc">Henrique Casttro, Grupo Menos é Mais</p></div></div>
+                </div>
+            </section>
+
+            <section class="content-section mt-5">
+                <div class="d-flex justify-content-between align-items-end mb-3">
+                    <h2 class="h4 fw-bold m-0">Artistas populares</h2>
+                    <span class="text-secondary small fw-bold cursor-pointer hover-underline">Mostrar tudo</span>
+                </div>
+
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3">
+                    <div class="col"><div class="spotify-card artist"><div class="img-container"><img src="henrij.jpg" alt=""><div class="play-hover"><i class="fa-solid fa-play"></i></div></div><p class="card-title">Henrique & Juliano</p><p class="card-desc">Artista</p></div></div>
+                    <div class="col"><div class="spotify-card artist"><div class="img-container"><img src="tasha.webp" alt=""><div class="play-hover"><i class="fa-solid fa-play"></i></div></div><p class="card-title">Tasha & Tracie</p><p class="card-desc">Artista</p></div></div>
+                    <div class="col"><div class="spotify-card artist"><div class="img-container"><img src="joao.jpg" alt=""><div class="play-hover"><i class="fa-solid fa-play"></i></div></div><p class="card-title">João Gomes</p><p class="card-desc">Artista</p></div></div>
+                    <div class="col"><div class="spotify-card artist"><div class="img-container"><img src="nanda.avif" alt=""><div class="play-hover"><i class="fa-solid fa-play"></i></div></div><p class="card-title">NandaTsunami</p><p class="card-desc">Artista</p></div></div>
+                    <div class="col"><div class="spotify-card artist"><div class="img-container"><img src="pablo.jpg" alt=""><div class="play-hover"><i class="fa-solid fa-play"></i></div></div><p class="card-title">Pablo do Arrocha</p><p class="card-desc">Artista</p></div></div>
+                    <div class="col"><div class="spotify-card artist"><div class="img-container"><img src="orochi.jpg" alt=""><div class="play-hover"><i class="fa-solid fa-play"></i></div></div><p class="card-title">Orochi</p><p class="card-desc">Artista</p></div></div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer-premium">
+        <div class="footer-content">
+            <div class="text-container">
+                <p class="title">Testar o Premium de graça</p>
+                <p class="subtitle">Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito.</p>
+            </div>
+            <div class="button-container">
+                <button class="btn-subscribe">Inscreva-se grátis</button>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
