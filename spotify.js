@@ -14,10 +14,3 @@ document.querySelectorAll('.spotify-card').forEach(card => {
         playerImg.src = img;
     });
 });
-
-// Botão Play/Pause
-const playBtn = document.querySelector('.main-play');
-playBtn.addEventListener('click', () => {
-    playBtn.classList.toggle('fa-circle-play');
-    playBtn.classList.toggle('fa-circle-pause');
-});
