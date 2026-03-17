@@ -1,5 +1,6 @@
 :root 
---black: #000000;
+{
+    --black: #000000;
     --dark-gray: #121212;
     --card-gray: #181818;
     --card-hover: #282828;
